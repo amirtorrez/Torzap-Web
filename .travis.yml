@@ -2,4 +2,3 @@ language: php
 dist: trusty
 php:
 - 7.1
-script: index.php
