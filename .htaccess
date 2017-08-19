@@ -1,0 +1,16 @@
+## Errores Apache
+ErrorDocument 400 '<title>Error 400</title><h2 style="font-family:Trebuchet MS;">El pedido es incorrecto.</h2>'
+ErrorDocument 401 '<title>Error 401</title><h2 style="font-family:Trebuchet MS;">Necesita autorizaci&oacute;n para esta &aacute;rea.</h2>'
+ErrorDocument 403 '<title>Error 403</title><h2 style="font-family:Trebuchet MS;">Acceso a esta &aacute;rea denegado.</h2>'
+ErrorDocument 404 '<title>Error 404</title><h2 style="font-family:Trebuchet MS;">&Aacute;rea solicitada no existe en el servidor.</h2>'
+ErrorDocument 500 '<title>Error 500</title><h2 style="font-family:Trebuchet MS;">Ha ocurrido un error interno en el servidor.</h2>'
+
+## No listar directorios
+IndexIgnore *
+Options -Indexes
+
+## Zona horaria
+php_value date.timezone America/Mexico_City
+
+## Restringir IP
+#deny from 192.168.0.1
