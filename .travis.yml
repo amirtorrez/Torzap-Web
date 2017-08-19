@@ -1,5 +1,5 @@
 language: php
 dist: trusty
 php:
-- 5.2
+- 5.3
 script: index.php
